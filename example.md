@@ -33,8 +33,5 @@ switch:
         command_off: "ssh UserB@SystemB:/home/user/miner.sh stop"
 ```
 
-Nun sollte jedesmal wenn der Schalter betätigt wird erst der aktuelle Prozess beendet werden und dann ein neuer gestartet werden.
-
 Dies ist nur ein erstes Beispiel. 
 
-Eine Idee wäre einfach für jeden Miner einen eigenen Schalter zu bauen und der Off Status sorgt nur dafür das der jeweilige Prozess beendet wird.
