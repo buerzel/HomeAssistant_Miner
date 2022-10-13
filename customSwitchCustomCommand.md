@@ -17,4 +17,15 @@ Wenn man nun die Benutzerfläche des Editors startet kann man oben links auf dem
 
 # Edit Configuration.yaml
 
+Hier mal ein Beispiel wie so ein Eintrag für einen switch aussehen könnte:
+
+```
+switch:
+  - platform: command_line
+    switches:
+      apollominer:
+        unique_id: apollominerId01
+        command_on: "touch /config/mineran.txt"
+        command_off: "touch /config/mineraus.txt"
+```
 
