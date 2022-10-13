@@ -30,7 +30,7 @@ switch:
       apollominer01:
         unique_id: apollominerId01
         command_on: "ssh UserB@SystemB:/home/user/miner.sh Miner01"
-        command_off: "ssh UserB@SystemB:/home/user/miner.sh Miner02"
+        command_off: "ssh UserB@SystemB:/home/user/miner.sh stop"
 ```
 
 Nun sollte jedesmal wenn der Schalter betätigt wird erst der aktuelle Prozess beendet werden und dann ein neuer gestartet werden.
