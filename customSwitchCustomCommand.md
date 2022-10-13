@@ -36,6 +36,12 @@ Und als Screenshot:
 
 In diesem Beispiel wurde ein Schalter angelegt der nun auf dem Dashboard plaziert werden kann (Nach einem Neustart - Siehe [Wichtig!](#-wichtig) )
 
+Wenn dieser Schalter betätigt wird (on) führt er das hinterlegte Kommando für on `touch /config/mineran.txt`aus. Dabei wird die Datei mineran.txt in das config Verzeichnis geschrieben.
+
+Wenn der Schalter nun erneutbetätigt wird, wird das Kommando für off ausgeführt.
+
+Hier kann man nun jedes beliebige Kommando plazieren, oder auch z.B. über eine ssh Verbindung ein Script auf einem anderen system ausführen.
+Dazu muss vorab aber eine ssh Anmeldung ohne Passwort eingerichtet werden. Die Anleitung dafür gibt es [hier](https://github.com/buerzel/HomeAssistant_Miner/blob/main/ssh_connect.md)!
 
 
 ---
