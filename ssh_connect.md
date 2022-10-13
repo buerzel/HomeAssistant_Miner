@@ -54,7 +54,21 @@ Das geht am sichersten von SystemA aus mit folgendem Befehl (***wobei Du ein let
 
 Auf SystemA als UserA:
 ```
-cat ~/.ssh/id_rsa.pub | ssh b@B 'cat >> .ssh/authorized_keys'
-Dabei wird der öffentliche Teil des Schlüsselpaares beim Benutzer b an die Textdatei .ssh/authorized_keys angehängt. In dieser Datei können auch mehrere Schlüssel erlaubt werden - einer pro Zeile.
+cat ~/.ssh/id_rsa.pub | ssh UserB@SystemB 'cat >> .ssh/authorized_keys'
+```
 
-Wenn Sie alles richtig gemacht haben, muss jetzt ein Einloggen ohne Passwort möglich sein
+Dabei wird der öffentliche Teil des Schlüsselpaares beim UserB an die Textdatei .ssh/authorized_keys angehängt. 
+
+In dieser Datei können auch mehrere Schlüssel erlaubt werden - ***einer pro Zeile***.
+
+Wenn Du alles richtig gemacht haben, muss jetzt ein Einloggen ohne Passwort möglich sein.
+
+```
+
+---
+
+Auf SystemA
+```
+ssh userB@systemB
+```
+Und schwups sind wir auf SystemB als UserB ohne Anmeldung!
