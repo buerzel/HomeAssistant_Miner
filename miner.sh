@@ -4,7 +4,9 @@
 # buerzel 2022
 # +++++++++++
 
-# To Start the script scriptname.sh MinerXX
+# To Start the script 
+# 1. make it executable (chmod +x miner.sh)
+# 2. start with: miner.sh MinerXX
 ###########################################
 # configuration part
 ###########################################
