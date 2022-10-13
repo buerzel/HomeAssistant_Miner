@@ -24,7 +24,7 @@ switch:
   - platform: command_line
     switches:
       apollominer:
-        unique_id: apollominerId01
+        unique_id: apollominer01
         command_on: "touch /config/mineran.txt"
         command_off: "touch /config/mineraus.txt"
 ```
