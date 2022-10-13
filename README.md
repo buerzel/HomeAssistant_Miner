@@ -9,4 +9,4 @@ Diese werden dann nach und nach zusammen geführt.
 ## Anleitungen:
 
 - [SSH Connect ohne Anmeldung einrichten](https://github.com/buerzel/HomeAssistant_Miner/blob/main/ssh_connect.md)
-
+- [HA: Manuell Switch anlegen und beliebige Kommandos hinterlegen](https://github.com/buerzel/HomeAssistant_Miner/blob/main/customSwitchCustomCommand.md)
