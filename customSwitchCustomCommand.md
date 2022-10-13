@@ -7,4 +7,14 @@ Für dieses Beispiel erstelle ich einen virtuellen Switch (Also kein echtes Ger�
 # Vorbereitung
 
 Damit man die configuration.yaml gut in HA bearbeiten kann, macht es Sinn vorab das Addon FileEditor zu installieren.
-![fileEditor](/Images/fileEditor.png)
+
+---
+<img src="/Images/fileEditor.png" width="50%" >
+
+---
+
+Wenn man nun die Benutzerfläche des Editors startet kann man oben links auf dem Ordner Symbol die Datei ***configuration.yaml*** suchen und auswählen.
+
+# Edit Configuration.yaml
+
+
