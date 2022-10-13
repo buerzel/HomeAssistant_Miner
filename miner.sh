@@ -40,6 +40,11 @@ elif [ $1 == "Miner02" ]
 #    /usr/bin/screen | $MinerXY
 
 
+# Stop 
+elif [ $1 == "stop" ]
+    then
+    /usr/bin/killall screen >/dev/null 2>&1
+
 # Help section
 elif [ $1 == "-h" ]
     then
