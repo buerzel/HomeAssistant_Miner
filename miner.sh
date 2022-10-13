@@ -53,6 +53,7 @@ elif [ $1 == "-h" ]
     1. Before start, edit the script.
        Feel free to create as many entries as you need. 
     2. Start the script: miner.sh Minerxx
+    3. for only stop all: miner.sh stop
     "
 else
     echo "no choice"
