@@ -16,3 +16,12 @@ Diese werden dann nach und nach zusammen geführt.
 
 ## Beispiel
 - [Beispiel für ein Zusammenspiel](https://github.com/buerzel/HomeAssistant_Miner/blob/main/example.md)
+
+---
+
+
+## V4V
+Falls Ihr mir ein paar Sats rüberschupsen möchtet, habe ich nichts dagegen.. :-)
+Ist aber keine Bedingung und ich erwarte es auch nicht.
+
+<img src="Images/donation.jpg" width="30%">
