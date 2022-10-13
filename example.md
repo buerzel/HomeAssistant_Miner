@@ -1,4 +1,4 @@
-# Beispiel für das Zusammenspiel HA und Mining
+# Beispiel für ein mögliches Zusammenspiel HA und Mining
 
 In der folgenden Grafik soll kurz schematisch das Zusammenspiel zwischen HA und einem Pi erklärt werden an dem ein Miner (z.B. Apollo oder Compac) hängt.
 
