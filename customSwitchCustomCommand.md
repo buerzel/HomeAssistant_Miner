@@ -7,4 +7,4 @@ F√ºr dieses Beispiel erstelle ich einen virtuellen Switch (Also kein echtes Ger√
 # Vorbereitung
 
 Damit man die configuration.yaml gut in HA bearbeiten kann, macht es Sinn vorab das Addon FileEditor zu installieren.
-![fileEditor](https://user-images.githubusercontent.com/37899088/195519065-dfed7a66-7165-420d-bc06-134e6d709058.png)
+![fileEditor](/Images/fileEditor.png)
