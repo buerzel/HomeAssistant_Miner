@@ -1,2 +1,2 @@
-# Home Assistant: Menuellen Switch anlegen und beliebige Kommandos hinterlegen.
+# Home Assistant: Manuellen Switch anlegen und beliebige Kommandos hinterlegen.
 
