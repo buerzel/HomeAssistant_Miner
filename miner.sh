@@ -56,8 +56,7 @@ elif [ $1 == "-h" ]
     3. for only stop all: miner.sh stop
     "
 else
-    echo "no choice 
-          please use miner.sh -h"
+    echo "no choice - please use miner.sh -h"
 fi
 
 
