@@ -39,6 +39,16 @@ elif [ $1 == "Miner02" ]
 #    then
 #    /usr/bin/screen | $MinerXY
 
+
+# Help section
+elif [ $1 == "-h" ]
+    then
+    echo "Help for use!
+    Is the script executable?
+    1. Before start, edit the script.
+       Feel free to create as many entries as you need. 
+    2. Start the script: miner.sh Minerxx
+    "
 else
     echo "no choice"
 fi
