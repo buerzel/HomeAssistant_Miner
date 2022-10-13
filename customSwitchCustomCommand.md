@@ -29,3 +29,20 @@ switch:
         command_off: "touch /config/mineraus.txt"
 ```
 
+---
+Und als Screenshot:
+<img src="/Images/switch.png">
+
+---
+
+# <img src="/Images/info.png" width="32"> WICHTIG! 
+
+Nachdem eine Änderung in der configuration.yaml getätigt wurde muss oben rechts aus speichern geklickt werden. Dabei muss ein kleines grünes Häckchen auftauchen sondt ist die Syntax falsch.
+
+Nun muss HA neu gestartet werden.
+
+Dazu klickst du auf den Hauptmenüpunkt ***Entwicklerwerkzeuge*** (Hammersymbol) links in der Leiste.
+
+Nun musst Du erst links auf den Punkt ***Konfiguration prüfen*** klicken und wenn alles ok ist kannst Du neustarten anklicken.
+
+<img src="/Images/neustart.png">
