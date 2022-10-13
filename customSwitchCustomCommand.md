@@ -33,6 +33,11 @@ switch:
 Und als Screenshot:
 <img src="/Images/switch.png">
 
+
+In diesem Beispiel wurde ein Schalter angelegt der nun auf dem Dashboard plaziert werden kann (Nach einem Neustart - Siehe [Wichtig!](#-wichtig) )
+
+
+
 ---
 
 # <img src="/Images/info.png" width="32"> WICHTIG! 
