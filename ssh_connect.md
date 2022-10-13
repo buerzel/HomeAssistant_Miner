@@ -63,8 +63,6 @@ In dieser Datei können auch mehrere Schlüssel erlaubt werden - ***einer pro Ze
 
 Wenn Du alles richtig gemacht haben, muss jetzt ein Einloggen ohne Passwort möglich sein.
 
-```
-
 ---
 
 Auf SystemA
