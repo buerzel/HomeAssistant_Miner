@@ -8,7 +8,7 @@
 ## Schritt 2. Lokaler Terminal
 Wenn Du nun auf Benutzerfläche öffnen klickst bekommst Du ein Terminal direkt auf dem HA.
 
-## Schritt 3. Zugriff von einem anderen PC SSH
+## Schritt 3. Zugriff von einem anderen PC via SSH
 Nachdem das Addon installiert wurde, siehst Du oben den reiter ***Konfiguration***. Diesen anklicken.
 
 Dort findest Du den Abschnitt ***ssh***.
