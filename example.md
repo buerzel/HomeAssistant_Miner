@@ -36,8 +36,8 @@ switch:
       apollo_miner:
         friendly_name: ApolloMiner
         unique_id: apollo_miner
-        command_on: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB touch /tmp/An"
-        command_off: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB touch /tmp/Aus"
+        command_on: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /PFAD/miner.sh Miner01"
+        command_off: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /PFAD/miner.sh stop"
 
 ```
 
