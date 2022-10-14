@@ -1,5 +1,11 @@
 # HomeAssistant for BTC Miner
 
+Ziel dieses Projektes ist es Steuerungsbefehle aus der HA Oberfläche über z.B. Schaltflächen an einen Miner bzw. Pi zu senden um den Miner zu steuern.
+Dazu wird im Hintergrund eine SSH Verbindung aufgebaut die ein Script (miner.sh) mit Attributen aufruft. In diesem Script werden Miner Strings, Zugangsdaten etc konfiguriert.
+
+Dies ermöglicht es entweder via Knopfdrück im HA oder in Abhängigkeit von anderen Dingen (Solaranlage) Miner entsprechend zu schalten.
+
+
 Aktuell sammel ich für jeden Teilbereich eine *.md Datei (Markdown) in der einzelne Arbeitsschritte erklärt werden.
 
 Diese werden dann nach und nach zusammen geführt.
