@@ -17,14 +17,13 @@ Es folgen einige Abfragen:
 
 ```
 Generating public/private rsa key pair.
-Enter file in which to save the key (/home/USER/.ssh/id_rsa):
+Enter file in which to save the key (/root/.ssh/id_rsa):
 ```
 
-Mit Return bestädtigen oder einen beliebigen Pfad angeben. 
+Mit Return bestädtigen. 
 
 Standard ist das Homeverzechnis des Users.
 
----
 
 ```
 Enter passphrase (empty for no passphrase):
@@ -32,8 +31,6 @@ Enter passphrase (empty for no passphrase):
 Hier kannst Du eine Passphrase für den Schlüssel hinterlegen, diese müsste angegeben werden wenn der Schlüssel verwendet wird. 
 
 Für unser Beispiel lassen wir diese Leer! Also einfach Return. Dies wird ***2x*** abgefragt, daher ***zweimal Return***!
-
----
 
 Nun wird angezeigt das ein Key erstellt worden ist und wo dieser liegt.
 
