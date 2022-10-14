@@ -9,7 +9,7 @@
 # 1. make it executable (chmod +x miner.sh)
 # 2. start with: miner.sh MinerXX
 ###########################################
-# configuration part
+# PART 1
 ###########################################
 # Path, binary and attributes example
 # MinerXX can be other miner, same miner with other username or modifikations - feel free
@@ -20,7 +20,9 @@ Miner02="/tmp/cgminer -o stratum+tcp://solo.ckpool.org:3333 -u <BTCADRESS> -p x 
 #Template for other miner
 #MinerXY=""
 
-###########################################################
+###########################################
+# PART 2
+###########################################
 
 # first end active sessions (hope you use screen only for the mining part!)
 
