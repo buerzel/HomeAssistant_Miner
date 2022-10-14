@@ -39,6 +39,7 @@ Diese werden dann nach und nach zusammen geführt.
 
 ## V4V
 Falls Ihr mir ein paar Sats rüberschupsen möchtet, habe ich nichts dagegen.. :-)
-Ist aber keine Bedingung und ich erwarte es auch nicht.
+
+Ist aber keine Bedingung.
 
 <img src="Images/donation.jpg" width="30%">
