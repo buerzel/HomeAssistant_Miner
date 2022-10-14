@@ -11,6 +11,9 @@ Aktuell sammel ich für jeden Teilbereich eine *.md Datei (Markdown) in der einz
 Diese werden dann nach und nach zusammen geführt.
 
 ---
+## Beispiel
+- [Beispiel für ein Zusammenspiel](https://github.com/buerzel/HomeAssistant_Miner/blob/main/example.md)
+
 
 ## Anleitungen:
 
@@ -19,8 +22,6 @@ Diese werden dann nach und nach zusammen geführt.
 - [Apollo / Cgminer Software via Script steuern](https://github.com/buerzel/HomeAssistant_Miner/blob/main/scriptApolloCgminer.md)
 
 
-## Beispiel
-- [Beispiel für ein Zusammenspiel](https://github.com/buerzel/HomeAssistant_Miner/blob/main/example.md)
 
 ---
 
