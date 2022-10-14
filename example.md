@@ -20,18 +20,27 @@ Die jeweiligen Anleitungen sind verlinkt. ;-)
 - Testen ob das script lokal funktioniert.
 
 ### Schritt 2.
-- In HA das Kommando für den schalter anpassen um auf dem Pi das script miner.sh ausführen zu können.
+Damit HA den id_rsa Key von root nutzen kann, sollte dieser in das /config Verzechnis kopiert werden.
+
+`cp ~/.ssh/id_rsa ~/config/ssh`
+
+
+### Schritt 3.
+- In HA das Kommando für den Schalter (Switch) anpassen um auf dem Pi das script miner.sh ausführen zu können.
 
 Nur ein Beispiel
 ```
 switch:
   - platform: command_line
     switches:
-      apollominer01:
-        unique_id: apollominerId01
-        command_on: "ssh UserB@SystemB:/home/user/miner.sh Miner01"
-        command_off: "ssh UserB@SystemB:/home/user/miner.sh stop"
+      apollo_miner:
+        friendly_name: ApolloMiner
+        unique_id: apollo_miner
+        command_on: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB touch /tmp/An"
+        command_off: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB touch /tmp/Aus"
+
 ```
+
 
 Dies ist nur ein erstes Beispiel. 
 
