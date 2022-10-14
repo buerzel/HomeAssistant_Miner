@@ -11,6 +11,9 @@ z.B.:
 - Solaranlage liefert weniger Strom als Wert X, nutze daher eine andere Taktfrequenz beim Miner
 - Keine Sonne, schalte den Miner aus
 - Sehr viel Sonne, schalte einen weiteren Miner dazu
+- Bestimmte Miner an bestimmten Tagen oder zu bestimmten Zeiten zu steuern.
+- Miner ausschalten wenn ein Rauchmelder Alarm meldet
+- etc.
 
 ---
 
