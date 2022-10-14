@@ -1,8 +1,9 @@
 #!/bin/bash
-# +++++++++++
-# Version 0.1
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Version 0.2 - bugfixes, first successfull run 
+# Version 0.1 - initial
 # buerzel 2022
-# +++++++++++
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # To Start the script 
 # 1. make it executable (chmod +x miner.sh)
@@ -29,18 +30,18 @@ Miner02="/tmp/cgminer -o stratum+tcp://solo.ckpool.org:3333 -u <BTCADRESS> -p x 
 
 if [ $1 == "Miner01" ]
     then
-    /usr/bin/screen | $Miner01
+    /usr/bin/screen -dm $Miner01
 elif [ $1 == "Miner02" ]
     then
-    /usr/bin/screen | $Miner02
+    /usr/bin/screen -dm $Miner02
 
 ### Template for every new Miner you create in the configuration part (under line 16) ###
 #elif [ $1 == "MinerXY" ]
 #    then
-#    /usr/bin/screen | $MinerXY
+#    /usr/bin/screen -dm $MinerXY
 
 
-# Stop 
+# Stop - Command to stop activ Screen session (Miner) 
 elif [ $1 == "stop" ]
     then
     /usr/bin/killall screen >/dev/null 2>&1
