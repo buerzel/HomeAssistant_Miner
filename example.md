@@ -7,7 +7,7 @@ In der folgenden Grafik soll kurz schematisch das Zusammenspiel zwischen HA und 
 ---
  Um diesen Aufbau zu realisieren müssen folgende Schritte vorab erledigt werden.
  * [SSH Zugriff ohne Passwort auf den Pi ](https://github.com/buerzel/HomeAssistant_Miner/blob/main/ssh_connect.md)
- * [Ein Script zum steuern des/der Miner erstellen](https://github.com/buerzel/HomeAssistant_Miner/blob/main/scriptApolloCgminer.md)
+ * [Das Script zum steuern des/der Miner herunterladen und konfigurieren](https://github.com/buerzel/HomeAssistant_Miner/blob/main/scriptApolloCgminer.md)
 
 Die jeweiligen Anleitungen sind verlinkt. ;-)
 
