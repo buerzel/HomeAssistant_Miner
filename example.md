@@ -77,7 +77,7 @@ Viel Spass beim ausprobieren.
 
 # <img src="/Images/info.png" width="32"> WICHTIG! 
 
-Nachdem eine Änderung in der configuration.yaml getätigt wurde muss oben rechts aus speichern geklickt werden. Dabei muss ein kleines grünes Häckchen auftauchen sondt ist die Syntax falsch.
+Nachdem eine Änderung in der configuration.yaml getätigt wurde muss oben rechts aus speichern geklickt werden. Dabei muss ein kleines grünes Häckchen auftauchen sonst ist die Syntax falsch.
 
 Nun muss HA neu gestartet werden.
 
