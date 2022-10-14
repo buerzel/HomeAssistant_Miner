@@ -20,7 +20,7 @@ Die jeweiligen Anleitungen sind verlinkt. ;-)
 - Testen ob das script lokal funktioniert.
 
 ### Schritt 2.
-Damit HA den id_rsa Key von root nutzen kann, sollte dieser in das /config Verzechnis kopiert werden.
+<img src="Images/important.png" width="32px"> Damit HA den id_rsa Key von root nutzen kann, sollte dieser in das /config Verzechnis kopiert werden.
 
 `cp ~/.ssh/id_rsa ~/config/ssh`
 
