@@ -70,3 +70,11 @@ Auf SystemA
 ssh userB@systemB
 ```
 Und schwups sind wir auf SystemB als UserB ohne Anmeldung!
+
+---
+
+# Besonderheit für HomeAssistant
+<img src="Images/important.png" width="32px"> 
+Wenn Ihr das mit HA mach werdet ihr als User root einen key generiern. Damit dieser von der HA Automation genutzt werden kann, sollte dieser in das /config Verzechnis kopiert werden.
+
+`cp ~/.ssh/id_rsa ~/config/ssh`
