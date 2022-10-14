@@ -6,15 +6,19 @@ Hier findet Ihr die Doku zu dem script miner.sh welches ebenfalls hier im Repo l
 
 ## Konfigurieren
 
-Wenn Du das Scri pt heruntergeladen hast mustt Du es noch konfigurieren. Dazu öffne es mit dem editor Deiner Wahl und trage im Part 1. die gewünschten Strings für die Miner ein. Miner01 -MinerXX.
+Wenn Du das Script heruntergeladen hast musst Du es noch konfigurieren. Dazu öffne es mit dem Editor Deiner Wahl und trage im Part 1. die gewünschten Strings für die Miner ein. Miner01 -MinerXX.
+**Wichtig** jeder Eintrag braucht eine eindeutige Zuordnung (Miner01, Miner02, Miner03 usw.)
 
-Falls Du mehr als zwei Miner angelegt hast musst Du im Part 2. für jeden weiteren Miner eine weitere ***elif*** Schleife hinzufügen. 
+Du kannst so entweder jeweils einen Miner mit anderen Credentials, anderen Pools oder anderen Frequenzeinstellungen anlegen.
+
+Falls Du **mehr als zwei Miner** angelegt hast musst Du im Part 2. für jeden weiteren Miner eine weitere ***elif*** Schleife hinzufügen. 
 
 Denk daran die ***#*** Rauten/Hashtags zu entfernen um auszukommentieren.
+Beispiel es gibt den Eintrag Miner03
 ```
-#elif [ $1 == "MinerXY" ]
+#elif [ $1 == "Miner03" ]
 #    then
-#    /usr/bin/screen -dm $MinerXY
+#    /usr/bin/screen -dm $Miner03
 #    exit 0;
 ```
 
@@ -23,7 +27,6 @@ Denk daran die ***#*** Rauten/Hashtags zu entfernen um auszukommentieren.
 Das Script wird mit den konfigurierten Parametern aufgerufen.
 
 z.B.:
-```
-./miner.sh Miner01
-```
-Wichtig wenn Miner01 aufgerufen wird, wird vorher automatisch jeder vorhandene screen beendet. So kannst du immer nur eine Konfiguration starten.
+`./miner.sh Miner01` oder `*./miner.sh stop`
+
+Wichtig wenn Miner01 aufgerufen wird, wird vorher automatisch jeder vorhandene screen beendet. So wird sicher gestellt dass immer nur eine Konfiguration läuft.
