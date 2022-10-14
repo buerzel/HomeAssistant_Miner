@@ -34,33 +34,17 @@ Für unser Beispiel lassen wir diese Leer! Also einfach Return. Dies wird ***2x*
 
 Nun wird angezeigt das ein Key erstellt worden ist und wo dieser liegt.
 
-## Schritt 2. Erstelle .ssh Verzeichnis auf SystemB
-Nun melde Dich (diesmal noch mit normal mit Passwort) auf SystemB als UserB an.
+## Schritt 2. Key kopieren
 
-Erzeugen dort, falls nicht vorhanden, das Verzeichnis .ssh im Homeverzeichnis von UserB.
+Dieser Key muss nun auf SystemB.
 
-```
-mkdir .ssh
-```
+Dazu nutze folgenden Befehl:
+`ssh-copy-id UserB@SystemB`
+Du musst das Passwort nochmal eingeben und danach sollte der Key kopiert worden sein.
 
-## Schritt 3. Schlüssel von UserA (SystemA) wird in das Homeverzechnis von UserB (SystemB) kopiert
 
-Im dritten und letzten Schritt wird der Zugriff mit dem anfangs erzeugten Schlüssel eingerichtet.
+## Schritt 3.
 
-Das geht am sichersten von SystemA aus mit folgendem Befehl (***wobei Du ein letztes Mal das Passwort eingeben musst - danach sollte es ohne gehen***):
-
-Auf SystemA als UserA:
-```
-cat ~/.ssh/id_rsa.pub | ssh UserB@SystemB 'cat >> .ssh/authorized_keys'
-```
-
-Dabei wird der öffentliche Teil des Schlüsselpaares beim UserB an die Textdatei .ssh/authorized_keys angehängt. 
-
-In dieser Datei können auch mehrere Schlüssel erlaubt werden - ***einer pro Zeile***.
-
-Wenn Du alles richtig gemacht haben, muss jetzt ein Einloggen ohne Passwort möglich sein.
-
----
 
 Auf SystemA
 ```
