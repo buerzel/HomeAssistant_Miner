@@ -26,3 +26,4 @@ z.B.:
 ```
 ./miner.sh Miner01
 ```
+Wichtig wenn Miner01 aufgerufen wird, wird vorher automatisch jeder vorhandene screen beendet. So kannst du immer nur eine Konfiguration starten.
