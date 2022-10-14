@@ -7,7 +7,6 @@ In der folgenden Grafik soll kurz schematisch das Zusammenspiel zwischen HA und 
 ---
  Um diesen Aufbau zu realisieren müssen folgende Schritte vorab erledigt werden.
  * [SSH Zugriff ohne Passwort auf den Pi ](https://github.com/buerzel/HomeAssistant_Miner/blob/main/ssh_connect.md)
- * [In Ha einen custom Switch anlegen](https://github.com/buerzel/HomeAssistant_Miner/blob/main/customSwitchCustomCommand.md)
  * [Ein Script zum steuern des/der Miner erstellen](https://github.com/buerzel/HomeAssistant_Miner/blob/main/scriptApolloCgminer.md)
 
 Die jeweiligen Anleitungen sind verlinkt. ;-)
@@ -16,6 +15,7 @@ Die jeweiligen Anleitungen sind verlinkt. ;-)
 
 ### Schritt. 1
 - Das [miner.sh](https://github.com/buerzel/HomeAssistant_Miner/blob/main/miner.sh) Script auf den Miner Pi legen (***z.B.: /home/user/miner.sh***) und konfigurieren.
+- Anleitung [hier](https://github.com/buerzel/HomeAssistant_Miner/blob/main/scriptApolloCgminer.md)
 - ggf. das script Ausführbar machen `chmod +x miner.sh`
 - Testen ob das script lokal funktioniert.
 
@@ -73,9 +73,19 @@ Nun kannst Du via Klick über die HA Oberfläche direkt das Kommando an den Pi s
 Viel Spass beim ausprobieren.
 
 
+--- 
 
+# <img src="/Images/info.png" width="32"> WICHTIG! 
 
+Nachdem eine Änderung in der configuration.yaml getätigt wurde muss oben rechts aus speichern geklickt werden. Dabei muss ein kleines grünes Häckchen auftauchen sondt ist die Syntax falsch.
 
+Nun muss HA neu gestartet werden.
+
+Dazu klickst du auf den Hauptmenüpunkt ***Entwicklerwerkzeuge*** (Hammersymbol) links in der Leiste.
+
+Nun musst Du erst links auf den Punkt ***Konfiguration prüfen*** klicken und wenn alles ok ist kannst Du neustarten anklicken.
+
+<img src="/Images/neustart.png">
 
 
 
