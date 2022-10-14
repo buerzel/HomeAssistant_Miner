@@ -59,14 +59,18 @@ Dann fügst Du eine neue Aktion ein (***+ Aktion hinzufügen***).
 
 Dazu wählst ***Dienst ausführen***.
 
-In dem Textfeld gibst dU nun den Namen an den Du unter Punkt *1.)* definiert hast. z.B. Wunschname1. Durch das autocomplete feld wird dir direkt das passende shell_command angezeigt. Dieses kannst Du nun auswählen und das Skript speichern.
+In dem Textfeld gibst Du nun den Namen an den Du unter Punkt *1.)* definiert hast. z.B. Wunschname1. Durch das autocomplete feld wird dir direkt das passende shell_command angezeigt. Dieses kannst Du nun auswählen und das Skript speichern.
 
 #### 4.)
 
+Nun gehst Du auf das Dashboard (Lovelace) und kannst DOrt eine neue Karte hinzufügen. Dort kannst Du nun Deine unter Punkt *3.* angelegte Entität eintragen. Es ist der Name des angelegten Skriptes in der HA Oberfläche.
 
 
+---
 
+Nun kannst Du via Klick über die HA Oberfläche direkt das Kommando an den Pi senden um den Miner auszuschalten oder einen anderen Miner oder eine andere Kombination zu nutzen.
 
+Viel Spass beim ausprobieren.
 
 
 
