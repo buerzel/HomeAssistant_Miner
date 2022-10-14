@@ -31,7 +31,7 @@ Es gibt mnehrere Wege nach Rom. :-)
 Ich habe mich primär für folgenden Weg entscheiden: shell_commands und dann HA skripte.
 
 #### 1.)
-Lege in der ***configuration.yaml** am Ende folgenden Eintrag an:
+Lege in der ***configuration.yaml*** am Ende folgenden Eintrag an:
 ```
 shell_command:
     Wunschname1: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh Miner01"
