@@ -10,7 +10,7 @@ Wenn Du das Scri pt heruntergeladen hast mustt Du es noch konfigurieren. Dazu ö
 
 Falls Du mehr als zwei Miner angelegt hast musst Du im Part 2. für jeden weiteren Miner eine weitere ***elif*** Schleife hinzufügen. 
 
-Denk daran die ***#*** Rauten/Hashtags zu entfernen umd auszukommentieren.
+Denk daran die ***#*** Rauten/Hashtags zu entfernen um auszukommentieren.
 ```
 #elif [ $1 == "MinerXY" ]
 #    then
