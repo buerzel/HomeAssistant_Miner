@@ -5,6 +5,14 @@ Dazu wird im Hintergrund eine SSH Verbindung aufgebaut die ein Script (miner.sh)
 
 Dies ermöglicht es entweder via Knopfdrück im HA oder in Abhängigkeit von anderen Dingen (Solaranlage) Miner entsprechend zu schalten.
 
+Es sollen hier nach und nach für unterschiedliche Miner Lösungen angeboten werden.
+Durch diese Möglichkeit entstehen vielfälltigste Aufbaumöglichkeiten.
+z.B.:
+- Solaranlage liefert weniger Strom als Wert X, nutze daher eine andere Taktfrequenz beim Miner
+- Keine Sonne, schalte den Miner aus
+- Sehr viel Sonne, schalte einen weiteren Miner dazu
+
+---
 
 Aktuell sammel ich für jeden Teilbereich eine *.md Datei (Markdown) in der einzelne Arbeitsschritte erklärt werden.
 
