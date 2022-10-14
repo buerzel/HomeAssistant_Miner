@@ -40,7 +40,7 @@ shell_command:
 ```
 Als Miner01 usw. die Bezeichnungen verwenden die im miner.sh script definiert wurden.
 
-Danch HA Konfig prüfen und neustarten.
+Danch HA Konfig prüfen und neustarten. [WICHTIG beachten](https://github.com/buerzel/HomeAssistant_Miner/blob/main/example.md#-wichtig)
 
 #### 2.)
 
