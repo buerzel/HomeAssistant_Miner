@@ -25,22 +25,31 @@ Die jeweiligen Anleitungen sind verlinkt. ;-)
 `cp ~/.ssh/id_rsa ~/config/ssh`
 
 
-### Schritt 3.
-- In HA das Kommando für den Schalter (Switch) anpassen um auf dem Pi das script miner.sh ausführen zu können.
+### Schritt 3. Via Klick den Miner an und auschalten
+Es gibt mnehrere Wege nach Rom. :-)
 
-Nur ein Beispiel
+Ich habe mich primär für folgenden Weg entscheiden: shell_commands und dann HA skripte.
+
+1.)
+Lege in der ***configuration.yaml** am Ende folgenden Eintrag an:
 ```
-switch:
-  - platform: command_line
-    switches:
-      apollo_miner:
-        friendly_name: ApolloMiner
-        unique_id: apollo_miner
-        command_on: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /PFAD/miner.sh Miner01"
-        command_off: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /PFAD/miner.sh stop"
-
-```
+shell_command:
+    Wunschname1: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh Miner01"
+    Wunschname2: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh Miner02"
+    Wunschname3: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh stop"
+---
+Als Miner01 usw. die Bezeichnungen verwenden die im miner.sh script definiert wurden.
 
 
-Dies ist nur ein erstes Beispiel. 
+
+
+
+
+
+
+
+
+
+
+
 
