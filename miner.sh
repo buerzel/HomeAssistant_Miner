@@ -31,20 +31,23 @@ Miner02="/tmp/cgminer -o stratum+tcp://solo.ckpool.org:3333 -u <BTCADRESS> -p x 
 if [ $1 == "Miner01" ]
     then
     /usr/bin/screen -dm $Miner01
+    exit 0;
 elif [ $1 == "Miner02" ]
     then
     /usr/bin/screen -dm $Miner02
-
+    exit 0;
 ### Template for every new Miner you create in the configuration part (under line 16) ###
 #elif [ $1 == "MinerXY" ]
 #    then
 #    /usr/bin/screen -dm $MinerXY
+#    exit 0;
 
 
 # Stop - Command to stop activ Screen session (Miner) 
 elif [ $1 == "stop" ]
     then
     /usr/bin/killall screen >/dev/null 2>&1
+    exit 0;
 
 # Help section
 elif [ $1 == "-h" ]
@@ -56,9 +59,12 @@ elif [ $1 == "-h" ]
     2. Start the script: miner.sh Minerxx
     3. for only stop all: miner.sh stop
     "
+    exit 0;
+    
 else
     echo "no choice - please use miner.sh -h"
+    exit 0;
 fi
 
-
+exit 0;
 ####################
