@@ -30,15 +30,38 @@ Es gibt mnehrere Wege nach Rom. :-)
 
 Ich habe mich primär für folgenden Weg entscheiden: shell_commands und dann HA skripte.
 
-1.)
+#### 1.)
 Lege in der ***configuration.yaml** am Ende folgenden Eintrag an:
 ```
 shell_command:
     Wunschname1: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh Miner01"
     Wunschname2: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh Miner02"
     Wunschname3: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh stop"
----
+```
 Als Miner01 usw. die Bezeichnungen verwenden die im miner.sh script definiert wurden.
+
+Danch HA Konfig prüfen und neustarten.
+
+#### 2.)
+
+Jetzt in der HA Oberfläche die Punkte ***Einstellungen -> Automatisierungen & Szenen -> Skripte*** auswählen.
+
+#### 3.)
+Hier ein neues Skript anlegen.
+
+Die Punkte Name, Symbol, ID mit einem guten Namen bezeichnen.
+
+Der Modus wird auf ***Einzeln*** gestellt.
+
+Im Abschnitt Sequenz wird der vorhandene Punkt (Device Action) gelöscht. Dazu auf die drei Punkte rechts von device action und löschen.
+
+Dann fügst Du eine neue Aktion ein (***+ Aktion hinzufügen***).
+
+Dazu wählst ***Dienst ausführen***.
+
+In dem Textfeld gibst dU nun den Namen an den Du unter Punkt *1.)* definiert hast. z.B. Wunschname1. Durch das autocomplete feld wird dir direkt das passende shell_command angezeigt. Dieses kannst Du nun auswählen und das Skript speichern.
+
+#### 4.)
 
 
 
