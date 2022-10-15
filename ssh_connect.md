@@ -1,3 +1,21 @@
+# Info vorab
+Diese Anleitung ist etwas allgemein gehalten.
+
+Wenn Ihr vorhabt euch von HA (SystemA) zu einem Miner/Pi(SystemB) zu verbinden, würde ich aktuell den ***root*** User auf dem SystemB (hier als UserB benannt) benutzen.
+
+Es kann sein, dass ihr euch standadmäßig nicht als root via ssh an SystemB anmelden könnt. Damit dies geht müsst ihr vorab folgendes tun.
+
+Als root user auf System B:
+
+Die Datei `/etc/ssh/sshd_config`um folgenden Eintrag erweitern.
+
+```
+PermitRootLogin yes
+```
+
+Danach den **ssh** Dienst neu starten: `/etc/init.d/ssh restart`
+
+
 # SSH Connect ohne Passwort einrichten
 
 Um sich von System A auf B via ssh verbinden zu können wird folgender Befehl verwendet:
