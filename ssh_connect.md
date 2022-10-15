@@ -74,7 +74,8 @@ Und schwups sind wir auf SystemB als UserB ohne Anmeldung!
 
 # Besonderheit für HomeAssistant
 <img src="Images/important.png" width="32px"> 
-Wenn Ihr das mit HA mach werdet ihr als User root einen Key generiern. Damit dieser von der HA Automation genutzt werden kann, sollte dieser in das /config Verzechnis kopiert werden.
+Wenn Ihr das mit HA im Terminal macht, werdet ihr als User root einen Key generiern. Damit dieser von der HA Automation genutzt werden kann, sollte dieser nach dem erstellen (ssh-keygen ...) in das /config Verzechnis kopiert werden. Dabei wird die Datei ***id_rsa*** in ***ssh*** umkopiert.
+Du kannst natürlich jeden anderen Namen benutzten, musst diesen dann aber bei den Paramtern berücksichtigen. (ssh -i (config/ssh ... oder ssh -i /config/customname)
 
-Also wie das keygen auch das copy als User root.
+
 `cp ~/.ssh/id_rsa ~/config/ssh`
