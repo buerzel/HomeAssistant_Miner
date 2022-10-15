@@ -1,5 +1,5 @@
 # Info vorab
-Diese Anleitung ist etwas allgemein gehalten.
+Diese Anleitung ist etwas allgemein gehalten. Daher vorab diese Infos!
 
 Wenn Ihr vorhabt euch von HA (SystemA) zu einem Miner/Pi(SystemB) zu verbinden, würde ich aktuell den ***root*** User auf dem SystemB (hier als UserB benannt) benutzen.
 
