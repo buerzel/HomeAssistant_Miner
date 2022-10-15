@@ -78,7 +78,8 @@ Wenn Ihr das mit HA im Terminal macht, werdet ihr als User root einen Key generi
 
 Dabei wird die Datei **id_rsa** in **ssh** umkopiert.
 
-Du kannst natürlich jeden anderen Namen benutzten, musst diesen dann aber bei den Paramtern berücksichtigen. (ssh -i (config/ssh ... oder ssh -i /config/customname)
+Du kannst natürlich jeden anderen Namen benutzten, musst diesen dann aber bei den Paramtern berücksichtigen. 
+(ssh -i /config/ssh ... oder ssh -i /config/customname)
 
 
 `cp ~/.ssh/id_rsa ~/config/ssh`
