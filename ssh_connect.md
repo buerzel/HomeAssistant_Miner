@@ -5,7 +5,7 @@ Wenn Ihr vorhabt euch von HA (SystemA) zu einem Miner/Pi(SystemB) zu verbinden, 
 
 Es kann sein, dass ihr euch standadmäßig nicht als root via ssh an SystemB anmelden könnt. Damit dies geht müsst ihr vorab folgendes tun.
 
-Als root user auf System B:
+Als root user auf SystemB:
 
 Die Datei `/etc/ssh/sshd_config`um folgenden Eintrag erweitern.
 
