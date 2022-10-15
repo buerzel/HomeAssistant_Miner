@@ -34,9 +34,9 @@ Ich habe mich primär für folgenden Weg entscheiden: shell_commands und dann HA
 Lege in der ***configuration.yaml*** am Ende folgenden Eintrag an:
 ```
 shell_command:
-    Wunschname1: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh Miner01"
-    Wunschname2: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh Miner02"
-    Wunschname3: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh stop"
+    wunschname1: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh Miner01"
+    wunschname2: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh Miner02"
+    wunschname3: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh stop"
 ```
 Als Miner01 usw. die Bezeichnungen verwenden die im miner.sh script definiert wurden.
 
