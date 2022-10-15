@@ -47,3 +47,8 @@ Falls Ihr mir ein paar Sats rüberschupsen möchtet, habe ich nichts dagegen.. :
 Ist aber keine Bedingung.
 
 <img src="Images/donation.jpg" width="30%">
+
+
+---
+
+All icons on this github md files are from: https://iconarchive.com
