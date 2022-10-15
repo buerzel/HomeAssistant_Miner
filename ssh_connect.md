@@ -7,7 +7,7 @@ Es kann sein, dass ihr euch standadmäßig nicht als root via ssh an SystemB anm
 
 Als root user auf SystemB:
 
-Die Datei `/etc/ssh/sshd_config`um folgenden Eintrag erweitern.
+Die Datei `/etc/ssh/sshd_config` um folgenden Eintrag erweitern.
 
 ```
 PermitRootLogin yes
