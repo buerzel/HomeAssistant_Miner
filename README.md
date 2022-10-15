@@ -1,25 +1,29 @@
 # HomeAssistant for BTC Miner
 
-Ziel dieses Projektes ist es Steuerungsbefehle aus der HA Oberfläche über z.B. Schaltflächen an einen Miner bzw. Pi zu senden um den Miner zu steuern.
-Dazu wird im Hintergrund eine SSH Verbindung aufgebaut die ein Script (miner.sh) mit Attributen aufruft. In diesem Script werden Miner Strings, Zugangsdaten etc konfiguriert.
+Ziel dieses Projektes ist es Steuerungsbefehle aus der HA Oberfläche über z.B. Schaltflächen an eine Miner Software (Aktuell apollo und cgminer) zu senden um den Miner zu steuern. Geplant ist es bald auch eine Anbindung an S9/19 zu realisieren.
 
-Dies ermöglicht es entweder via Knopfdrück im HA oder in Abhängigkeit von anderen Dingen (Solaranlage) Miner entsprechend zu schalten.
+Dazu wird aktuell im Hintergrund eine SSH Verbindung aufgebaut die ein Script [miner.sh](https://github.com/buerzel/HomeAssistant_Miner/blob/main/miner.sh) auf dem entfernten System (z.B. Pi) mit Attributen aufruft. In diesem Script werden Miner Strings, Zugangsdaten etc konfiguriert. Der Aufruf des Script ist dann mit Paramtern möglich.
+
+Dies ermöglicht es entweder via Knopfdrück im HA oder in Abhängigkeit von anderen Dingen (Solaranlage, Uhrzeit, Stromverbauch, Wetter, Lust und Laune) Miner entsprechend zu schalten.
 
 Es sollen hier nach und nach für unterschiedliche Miner Lösungen angeboten werden.
-Durch diese Möglichkeit entstehen vielfälltigste Aufbaumöglichkeiten.
+Durch diese Möglichkeit entstehen vielfälltigste Verwendungsmöglichkeiten.
 z.B.:
-- Solaranlage liefert weniger Strom als Wert X, nutze daher eine andere Taktfrequenz beim Miner
-- Keine Sonne, schalte den Miner aus
-- Sehr viel Sonne, schalte einen weiteren Miner dazu
-- Bestimmte Miner an bestimmten Tagen oder zu bestimmten Zeiten zu steuern.
+- Eine Solaranlage liefert weniger Strom als Wert X -> nutze daher eine andere Taktfrequenz beim Miner
+- Es scheint keine Sonne -> schalte den Miner aus
+- Es scheint viel Sonne -> schalte einen weiteren Miner dazu
+- Bestimmte Miner an bestimmten Tagen oder zu bestimmten Zeiten an bzw. aus zuschalten
 - Miner ausschalten wenn ein Rauchmelder Alarm meldet
+- Miner anschalten wenn die Waschmaschine fertig ist um den Trockenraum zu heizen
+- ...
 - etc.
 
 ---
 
 Aktuell sammel ich für jeden Teilbereich eine *.md Datei (Markdown) in der einzelne Arbeitsschritte erklärt werden.
+Daher kann es aktuell noch etwas unordentlich sein. ;-)
 
-Diese werden dann nach und nach zusammen geführt.
+Diese werden dann aber nach und nach zusammen geführt.
 
 ---
 ## Beispiel
