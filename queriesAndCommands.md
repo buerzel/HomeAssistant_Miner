@@ -42,7 +42,7 @@ command: 'curl -s https://solo.ckpool.org/users/<BTCADRESSE> | jq -r ''.["worker
 
 **CGMiner:** Abfrage an einen aneren Pi welche BTCAdresse gerade fürs Mining genutzt. 
 ```yaml
-platform: command_line
+- platform: command_line
     name: 'BTC Cgminer Adresse'
     unique_id: btcCgminerAdrID
     command: ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB ps -ef | grep SCREEN | sed 's/^.*-u//g;s/-p.*$//g'
