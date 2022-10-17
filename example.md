@@ -63,7 +63,7 @@ In dem Textfeld gibst Du nun den Namen an den Du unter Punkt *1.)* definiert has
 
 #### 4.)
 
-Nun gehst Du auf das Dashboard (Lovelace) und kannst DOrt eine neue Karte hinzufügen. Dort kannst Du nun Deine unter Punkt *3.* angelegte Entität eintragen. Es ist der Name des angelegten Skriptes in der HA Oberfläche.
+Nun gehst Du auf das Dashboard (Lovelace) und kannst Dort eine neue Karte hinzufügen. Dort kannst Du nun Deine unter Punkt *3.* angelegte Entität eintragen. Es ist der Name des angelegten Skriptes in der HA Oberfläche.
 
 
 ---
