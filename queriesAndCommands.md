@@ -30,7 +30,6 @@ sensor:
 ```
 ***Anmerkung:*** jeden weiteren sensor könnt ihr direkt unter dem Punkt **sensor** einfügen. Wie im Beipeil!
 
----
 
 ### weitere Abfragen
 Abfrage an die CKpool Übersichtsseite für einen bestimmten worker
@@ -48,6 +47,17 @@ platform: command_line
 ```
 
 
+---
+
 
 
 ## Command (z.B. via Switch, Button oder als Aktion in der Automatisierung)
+
+Ein Beipspiel für die Einbindung eines Befehls in HA über die ***configuration.yaml***
+
+Hier wird auf dem Pi das miner.sh script mit Paramter ausgeführt.
+```yaml
+shell_command:
+  kommando1: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh Miner01"
+  kommando2: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh stop"
+```
