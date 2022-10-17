@@ -12,7 +12,7 @@ Ein kleines Beispiel wir so ein Eintrag in der ***configuration.yaml*** aussehen
 
 1. Der erste Eintrag holt die aktuelle Blockzeit :-)
 2. Der zweite Eintrag holt beim ckpool den Wert für alle Miner die dort auf meiner Adresse laufen würden.
-```
+```yaml
 sensor:
   - platform: rest
     name: nextBlock
@@ -39,7 +39,7 @@ command: 'curl -s https://solo.ckpool.org/users/<BTCADRESSE> | jq -r ''.["worker
 ```
 
 **CGMiner:** Abfrage an einen aneren Pi welche BTCAdresse gerade fürs Mining genutzt. 
-```
+```yaml
 platform: command_line
     name: 'BTC Cgminer Adresse'
     unique_id: btcCgminerAdrID
