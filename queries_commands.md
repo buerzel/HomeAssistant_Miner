@@ -32,9 +32,9 @@ sensor:
 ---
 
 ### weitere Abfragen
-Abfrage an die CKpool Übersichtsseite
+Abfrage an die CKpool Übersichtsseite für einen bestimmten worker
 ```
-command: 'curl -s https://solo.ckpool.org/users/3KoiL9Dgz4NhWjF8XrUxMZQgeABdTUjoeb | jq -r ''.["worker"][0]["bestshare"]'''
+command: 'curl -s https://solo.ckpool.org/users/BTC | jq -r ''.["worker"][0]["bestshare"]'''
 ```
 
 
