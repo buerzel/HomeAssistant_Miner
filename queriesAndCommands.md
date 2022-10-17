@@ -51,7 +51,13 @@ command: 'curl -s https://solo.ckpool.org/users/<BTCADRESSE> | jq -r ''.["worker
 
 **CPU Abfrage auf einem Pi für das Apollo Binary**
 ```yaml
-command: ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB top -bn 1 | grep apollo | cut -d' ' -f25
+  - platform: command_line
+    name: 'CPU Apollo'
+    unique_id: cpuApolloId
+    command: ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB top -bn 1 | grep apollo | cut -d' ' -f25
+    value_template: "{{ value }}"
+    unit_of_measurement: '%'
+    scan_interval: 60
 ```
 
 ---
