@@ -40,4 +40,4 @@ command: 'curl -s https://solo.ckpool.org/users/<BTCADRESSE> | jq -r ''.["worker
 
 
 
-## Kommandos
+## Command (z.B. via Switch, Button oder als Aktion in der Automatisierung)
