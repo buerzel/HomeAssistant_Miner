@@ -6,7 +6,7 @@ Hier sollen ein paar Anregungen, Ideen und Beispiele gesammelt werden.
 
 <img src="Images/important.png" width="32px" >
 
-**Wichtig:** die Punkte **sensor:** , **switch:** und **shell_command** sind jeweils die Überbegriffe unter denen dann alle Aktionen untergeordnet werden. In der ***configuration.yaml*** stehen sie immer ganz links und daraunter werden die einzelnen Punkte jeweils mit **-** eingeleitet.
+**Wichtig:** die Punkte **sensor:** , **switch:** und **shell_command** sind jeweils die Überbegriffe unter denen dann alle Aktionen untergeordnet werden. In der ***configuration.yaml*** stehen sie immer ganz links und daraunter werden die einzelnen Punkte jeweils mit **-** (Bindestrich) eingeleitet.
 
 ## Sensoren
 In der ***configuration.yaml*** gibt es die Möglichkeit eigene Sesoren anzulegen. So kann man Dinge die eigentlich nicht vorgesehen waren auch abfragen. ;-)
