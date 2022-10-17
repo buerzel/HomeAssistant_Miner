@@ -35,7 +35,7 @@ Diese werden dann aber nach und nach zusammen geführt.
 - [SSH Connect ohne Anmeldung einrichten](https://github.com/buerzel/HomeAssistant_Miner/blob/main/ssh_connect.md)
 - [SSH in HA einrichten](https://github.com/buerzel/HomeAssistant_Miner/blob/main/sshHomeAssistant.md)
 - [Apollo / Cgminer Software via Script steuern](https://github.com/buerzel/HomeAssistant_Miner/blob/main/scriptApolloCgminer.md)
-- [Sammlung von Abfragen für Sensoren und Kommandos](https://github.com/buerzel/HomeAssistant_Miner/blob/main/queries_commands.md)
+- [Sammlung von Abfragen für Sensoren und Kommandos](https://github.com/buerzel/HomeAssistant_Miner/blob/main/queriesAndcommands.md)
 
 
 ---
