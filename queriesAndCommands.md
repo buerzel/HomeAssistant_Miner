@@ -38,6 +38,16 @@ Abfrage an die CKpool Übersichtsseite für einen bestimmten worker
 command: 'curl -s https://solo.ckpool.org/users/<BTCADRESSE> | jq -r ''.["worker"][0]["bestshare"]'''
 ```
 
+**CGMiner:** Abfrage an einen aneren Pi welche BTCAdresse gerade fürs Mining genutzt. 
+```
+platform: command_line
+    name: 'BTC Cgminer Adresse'
+    unique_id: btcCgminerAdrID
+    command: ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB ps -ef | grep SCREEN | sed 's/^.*-u//g;s/-p.*$//g'
+    scan_interval: 60
+```
+
+
 
 
 ## Command (z.B. via Switch, Button oder als Aktion in der Automatisierung)
