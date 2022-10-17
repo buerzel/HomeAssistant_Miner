@@ -34,7 +34,7 @@ sensor:
 
 ### weitere Abfragen
 Abfrage an die CKpool Übersichtsseite für einen bestimmten worker
-```
+```yaml
 command: 'curl -s https://solo.ckpool.org/users/<BTCADRESSE> | jq -r ''.["worker"][0]["bestshare"]'''
 ```
 
