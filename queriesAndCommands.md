@@ -38,9 +38,6 @@ Abfrage an die CKpool Übersichtsseite für einen bestimmten worker
 command: 'curl -s https://solo.ckpool.org/users/<BTCADRESSE> | jq -r ''.["worker"][0]["bestshare"]'''
 ```
 
-|**TEST1**|**'TEST2**|**Test3**|
-| --- | --- | --- |
-| qweqweqweqweqweqw | sdfsdfsdfsdfsdfsdf | sdfsdfsdfffffffffsdfsdfsd |
 
 
 ## Kommandos
