@@ -32,7 +32,7 @@ Ich habe mich primär für folgenden Weg entscheiden: shell_commands und dann HA
 
 #### 1.)
 Lege in der ***configuration.yaml*** am Ende folgenden Eintrag an:
-```
+```yaml
 shell_command:
     wunschname1: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh Miner01"
     wunschname2: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh Miner02"
