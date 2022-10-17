@@ -49,6 +49,11 @@ platform: command_line
     scan_interval: 60
 ```
 
+**CPU Abfrage auf einem Pi für das Apollo Binary**
+```
+command: ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB top -n 1 | grep apollo | cut -d " " -f25
+```
+
 
 ---
 
