@@ -10,7 +10,7 @@ In der ***configuration.yaml*** gibt es die Möglichkeit eigene Sesoren anzulege
 Ein kleines Beispiel wir so ein Eintrag in der ***configuration.yaml*** aussehen kann:
 
 1. Der erste Eintrag holt die aktuelle Blockzeit :-)
-2. Der zweite Eintrag holt beim ckpool den Wert für alle miner die dort auf meiner Adresse laufen würden.
+2. Der zweite Eintrag holt beim ckpool den Wert für alle Miner die dort auf meiner Adresse laufen würden.
 ```
 sensor:
   - platform: rest
@@ -31,6 +31,7 @@ sensor:
 
 ---
 
+### weitere Abfragen
 Abfrage an die CKpool Übersichtsseite
 ```
 command: 'curl -s https://solo.ckpool.org/users/3KoiL9Dgz4NhWjF8XrUxMZQgeABdTUjoeb | jq -r ''.["worker"][0]["bestshare"]'''
