@@ -49,16 +49,26 @@ command: 'curl -s https://solo.ckpool.org/users/<BTCADRESSE> | jq -r ''.["worker
     scan_interval: 60
 ```
 
-**CPU Abfrage auf einem Pi für das Apollo Binary**
+**CPU Abfrage auf einem Pi für das Apollo und Cgminer Binary**
+Bitte beachte den Paramter **-f** beim **cut** Befehl. dieser zählt den Abstand zur Ausgabe für die CPU. Falls kein Wert zurückgeliefert wird, kann es sein das der Abstand nicht mehr stimmt.
+
 ```yaml
-  - platform: command_line
+- platform: command_line
     name: 'CPU Apollo'
     unique_id: cpuApolloId
     command: ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB top -bn 1 | grep apollo | cut -d' ' -f25
     value_template: "{{ value }}"
     unit_of_measurement: '%'
     scan_interval: 60
+- platform: command_line
+    name: 'CPU Apollo'
+    unique_id: cpuCgminerId
+    command: ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB top -bn 1 | grep cgminer | cut -d' ' -f22
+    value_template: "{{ value }}"
+    unit_of_measurement: '%'
+    scan_interval: 60
 ```
+
 
 ---
 
