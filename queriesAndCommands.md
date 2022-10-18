@@ -53,7 +53,7 @@ sensor:
     scan_interval: 60
 ```
 
-### Abfrage an einen anderen Pi welche BTCAdresse gerade fürs Mining genutzt (Unterschied bei Apollo -user und Cgminer -u)
+### Abfrage an einen anderen Pi welche BTCAdresse gerade fürs Mining genutzt (Unterschiede gibt es bei Apollo -user und Cgminer -u)
 ```yaml
   - platform: command_line
     name: 'BTC Apollo Adresse'
