@@ -38,6 +38,7 @@ elif [ $1 == "Miner02" ]
     then
     /usr/bin/screen -dm $Miner02
     exit 0;
+    
 ### Template for every new Miner you create in the configuration part (under line 16) ###
 #elif [ $1 == "MinerXY" ]
 #    then
