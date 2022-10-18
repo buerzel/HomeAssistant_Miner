@@ -61,7 +61,7 @@ Bitte beachte den Paramter **-f** beim **cut** Befehl. dieser zählt den Abstand
     unit_of_measurement: '%'
     scan_interval: 60
 - platform: command_line
-    name: 'CPU Apollo'
+    name: 'CPU Cgminer'
     unique_id: cpuCgminerId
     command: ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB top -bn 1 | grep cgminer | cut -d' ' -f22
     value_template: "{{ value }}"
