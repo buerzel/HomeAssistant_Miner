@@ -36,9 +36,21 @@ sensor:
 ***Anmerkung:*** jeden weiteren sensor könnt ihr direkt unter dem Punkt **sensor** einfügen. Wie im Beipeil!
 
 
-### Abfrage an die CKpool Übersichtsseite für einen bestimmten worker
+### Abfrage an die CKpool Übersichtsseite für die bestshare eines bestimmten Worker und die gesamte Hashrate der letzten Minute für alle Worker
 ```yaml
-command: 'curl -s https://solo.ckpool.org/users/<BTCADRESSE> | jq -r ''.["worker"][0]["bestshare"]'''
+  - platform: command_line
+    command: 'curl -s https://solo.ckpool.org/users/<BTCADRESSE> | jq -r ''.["worker"][0]["bestshare"]'''
+    name: cksolo_bestshare
+    unique_id: cksoloBestshareId
+    unit_of_measurement: shares
+    value_template: "{{ value }}"
+    scan_interval: 600
+  - platform: command_line
+    command: 'curl -s https://solo.ckpool.org/users/<BTCADRESSE>  | jq -r ''.["hashrate1m"]'''
+    name: ckpoolHashrate1m
+    unique_id: ckpoolHashrate1mId
+    unit_of_measurement: Hs
+    scan_interval: 60
 ```
 
 ### Abfrage an einen anderen Pi welche BTCAdresse gerade fürs Mining genutzt (Unterschied bei Apollo -user und Cgminer -u)
