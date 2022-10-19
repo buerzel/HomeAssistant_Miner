@@ -68,6 +68,12 @@ sensor:
     scan_interval: 60
     value_template: "{{ value[:5] + '....' +  value[-20:] }}"
 ```
+Wer die gesamte Adresse angezeigt bekommen haben möchte tauscht das value_template aus:
+
+komplette Ansicht ǜalue_template: "{{ value }}"
+gekürzte Ansicht `value_template: "{{ value[:5] + '....' +  value[-20:] }}"`
+
+
 
 ### CPU Abfrage auf einem Pi für das Apollo und Cgminer Binary**
 Bitte beachte den Paramter **-f** beim **cut** Befehl. dieser zählt den Abstand zur Ausgabe für die CPU. Falls kein Wert zurückgeliefert wird, kann es sein das der Abstand nicht mehr stimmt.
