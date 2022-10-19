@@ -60,11 +60,13 @@ sensor:
     unique_id: btcApolloAdrID
     command: ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB ps -ef | grep SCREEN | sed 's/^.*-user//g;s/-p.*$//g'
     scan_interval: 60
+    value_template: "{{ value[0:5] + '....' +  value[25:50] }}
   - platform: command_line
     name: 'BTC Cgminer Adresse'
     unique_id: btcCgminerAdrID
     command: ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB ps -ef | grep SCREEN | sed 's/^.*-u//g;s/-p.*$//g'
     scan_interval: 60
+    value_template: "{{ value[0:5] + '....' +  value[25:50] }}
 ```
 
 ### CPU Abfrage auf einem Pi für das Apollo und Cgminer Binary**
