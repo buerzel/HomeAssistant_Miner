@@ -1,12 +1,12 @@
 
 # Abfragen und Kommandos
-Für dieVerbindung über ssh besteht die Möglichkeit auch unabhängig vom Miner Infos zu sammeln und interssante werte abzufragen oder Befehle abzusetzen.
+Für die Verbindung über ssh besteht die Möglichkeit auch unabhängig vom Miner Infos zu sammeln und interssante Werte abzufragen oder Befehle abzusetzen.
 
 Hier sollen ein paar Anregungen, Ideen und Beispiele gesammelt werden.
 
 <img src="Images/important.png" width="32px" >
 
-**Wichtig:** die Punkte **sensor:** , **switch:** und **shell_command** sind jeweils die Überbegriffe unter denen dann alle Aktionen untergeordnet werden. In der ***configuration.yaml*** stehen sie immer ganz links und daraunter werden die einzelnen Punkte jeweils mit **-** (Bindestrich) eingeleitet.
+**Wichtig:** die Punkte **sensor:** , **switch:** und **shell_command** sind jeweils die Überbegriffe unter denen dann alle Aktionen untergeordnet werden. In der ***configuration.yaml*** stehen sie immer ganz links und dadrunter werden die einzelnen Punkte jeweils mit **-** (Bindestrich) eingeleitet.
 
 ---
 
@@ -33,7 +33,7 @@ sensor:
     unit_of_measurement: Hs
     scan_interval: 60
 ```
-***Anmerkung:*** jeden weiteren sensor könnt ihr direkt unter dem Punkt **sensor** einfügen. Wie im Beipeil!
+***Anmerkung:*** jeden weiteren Sensor könnt ihr direkt unter dem Punkt **sensor** einfügen. Wie im Beispiel!
 
 
 ### Abfrage an die CKpool Übersichtsseite für die bestshare eines bestimmten Worker und die gesamte Hashrate der letzten Minute für alle Worker
@@ -76,7 +76,7 @@ gekürzte Ansicht `value_template: "{{ value[:5] + '....' +  value[-20:] }}"`
 
 
 ### CPU Abfrage auf einem Pi für das Apollo und Cgminer Binary**
-Bitte beachte den Paramter **-f** beim **cut** Befehl. dieser zählt den Abstand zur Ausgabe für die CPU. Falls kein Wert zurückgeliefert wird, kann es sein das der Abstand nicht mehr stimmt.
+Bitte beachte den Parameter **-f** beim **cut** Befehl. dieser zählt den Abstand zur Ausgabe für die CPU. Falls kein Wert zurückgeliefert wird, kann es sein das der Abstand nicht mehr stimmt.
 
 ```yaml
 - platform: command_line
@@ -102,7 +102,7 @@ Bitte beachte den Paramter **-f** beim **cut** Befehl. dieser zählt den Abstand
 
 # Command (z.B. via Switch, Button oder als Aktion in der Automatisierung)
 
-Ein Beipspiel für die Einbindung eines Befehls in HA über die ***configuration.yaml***
+Ein Beispiel für die Einbindung eines Befehls in HA über die ***configuration.yaml***
 
 Hier wird auf dem Pi das miner.sh script mit Paramter ausgeführt.
 ```yaml
