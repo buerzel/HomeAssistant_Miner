@@ -11,12 +11,13 @@ Hier sollen ein paar Anregungen, Ideen und Beispiele gesammelt werden.
 ---
 
 # Sensoren
-In der ***configuration.yaml*** gibt es die Möglichkeit eigene Sesoren anzulegen. So kann man Dinge die eigentlich nicht vorgesehen waren auch abfragen. ;-)
+In der ***configuration.yaml*** gibt es die Möglichkeit eigene Sensoren anzulegen. So kann man Dinge die eigentlich nicht vorgesehen waren auch abfragen. ;-)
 
-### Blockzeit und Hashrate ###
+### Blockzeit, Hashrate und Difficulty ###
 
 1. Der erste Eintrag holt die aktuelle Blockzeit :-)
 2. Der zweite Eintrag holt beim ckpool den Wert für alle Miner die dort auf meiner Adresse laufen würden.
+3. Der dritte Eintrag holt die aktuelle Difficulty.
 ```yaml
 sensor:
   - platform: rest
@@ -32,6 +33,13 @@ sensor:
     unique_id: ckpoolHashrate1mId
     unit_of_measurement: Hs
     scan_interval: 60
+  - platform: command_line
+    command: "curl -s https://mempool.space/api/v1/mining/hashrate/3d | jq -r '.[\"currentDifficulty\"]'"
+    name: currentDifficulty
+    unique_id: currentDifficulty
+    unit_of_measurement: Difficulty
+    value_template: "{{ value | float | round(0) }}"
+    scan_interval: 500
 ```
 ***Anmerkung:*** jeden weiteren Sensor könnt ihr direkt unter dem Punkt **sensor** einfügen. Wie im Beispiel!
 
@@ -104,7 +112,7 @@ Bitte beachte den Parameter **-f** beim **cut** Befehl. dieser zählt den Abstan
 
 Ein Beispiel für die Einbindung eines Befehls in HA über die ***configuration.yaml***
 
-Hier wird auf dem Pi das miner.sh script mit Paramter ausgeführt.
+Hier wird auf dem Pi das miner.sh script mit Parameter ausgeführt.
 ```yaml
 shell_command:
   kommando1: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh Miner01"
