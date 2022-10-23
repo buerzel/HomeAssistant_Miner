@@ -78,7 +78,7 @@ sensor:
 ```
 Wer die gesamte Adresse angezeigt bekommen haben möchte tauscht das value_template aus:
 
-komplette Ansicht ǜalue_template: "{{ value }}"
+komplette Ansicht value_template: "{{ value }}"
 gekürzte Ansicht `value_template: "{{ value[:5] + '....' +  value[-20:] }}"`
 
 
