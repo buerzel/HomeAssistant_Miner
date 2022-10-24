@@ -55,7 +55,7 @@ Ist aber keine Bedingung.
 - [PV Solo Mining](https://github.com/4plus17/PV-Solo-Mining)
 - [BTC-Info-LEDMatrix](https://github.com/max21h/BTC-Info-LEDMatrix)
 
-** Telegram Gruppen:**
+**Telegram Gruppen:**
 - [HomeAssistant für miner](https://t.me/HomeAssistant_BtcMiner)
 - [BTC Solo Mining](https://github.com/max21h/BTC-Info-LEDMatrix)
 
