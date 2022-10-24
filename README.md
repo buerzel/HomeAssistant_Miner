@@ -52,7 +52,7 @@ Ist aber keine Bedingung.
 ## Andere interessante Projekte:
 **Github:**
 - [Solo Mining](https://github.com/gunther0815/solo-usb-mining)
-- [PV Solo Mining] (https://github.com/4plus17/PV-Solo-Mining)
+- [PV Solo Mining](https://github.com/4plus17/PV-Solo-Mining)
 - [BTC-Info-LEDMatrix](https://github.com/max21h/BTC-Info-LEDMatrix)
 
 ** Telegram Gruppen:**
