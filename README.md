@@ -49,6 +49,17 @@ Ist aber keine Bedingung.
 <img src="Images/donation.jpg" width="30%">
 
 
+## Andere interessante Projekte:
+**Github:**
+- [Solo Mining](https://github.com/gunther0815/solo-usb-mining)
+- [PV Solo Mining] (https://github.com/4plus17/PV-Solo-Mining)
+- [BTC-Info-LEDMatrix](https://github.com/max21h/BTC-Info-LEDMatrix)
+
+** Telegram Gruppen:**
+- [HomeAssistant für miner](https://t.me/HomeAssistant_BtcMiner)
+- [BTC Solo Mining](https://github.com/max21h/BTC-Info-LEDMatrix)
+
+
 ---
 
 All icons on this github md files are from: https://iconarchive.com
