@@ -120,6 +120,17 @@ Die aktuelle Lüfterumdrehung
   scan_interval: 60
 ```
 
+***Aktuelle Durchschnittstemperatur***
+```yaml
+- platform: command_line
+  command: ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB "/bin/cat apollo-miner.*  | jq -cr '.[\"temperature\"][\"avr\"]'' "
+  name: apollo_temp
+  unique_id: apolloTempId
+  unit_of_measurement: Grad
+  value_template: "{{ value }}"
+  scan_interval: 60
+```
+
 
 ---
 
