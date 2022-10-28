@@ -133,6 +133,16 @@ Da es sich um eine json datei handelt, kann die sehr schnell abgefragt werden.
   scan_interval: 60
 ```
 
+#### Aktuelle Watt Pro GHs Angabe
+```yaml
+- platform: command_line
+  command: ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB "/bin/cat apollo-miner.* | jq -r '.[\"master\"][\"wattPerGHs\"]' "
+  name: apollo_wattPerGHs
+  unique_id: apolloWattPerGHsId
+  unit_of_measurement: W/GHS
+  value_template: "{{ value }}"
+  scan_interval: 60
+```
 
 ---
 
