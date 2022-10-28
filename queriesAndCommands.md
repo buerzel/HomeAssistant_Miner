@@ -104,12 +104,14 @@ Bitte beachte den Parameter **-f** beim **cut** Befehl. dieser zählt den Abstan
 ```
 
 ### Apollo Infos Abfragen über die Datei apollo-miner.* (json datei)
-Die Datei wird immer nach dem Start neu angelegt mit einer anderen Nummer ( z.B. apollo-miner.3232323243243434)
-Dort werden regelmäßig alle Infos zum Apollo Miner abgelegt während des minings.
+Die Datei wird immer nach dem Start neu angelegt mit einer anderen Nummer ( z.B. apollo-miner.3232323243243434). Damit die Nummer keine Rolle spielt, laufen die Abfragen auf die Wildcard (*).
+
+In dieser Datei werden regelmäßig alle Infos zum Apollo Miner abgelegt während des minings.
 Da es sich um eine json datei handelt, kann die sehr schnell abgefragt werden.
 
-***! Da diese Datei immer im USerVerzeichnis angelegt wird, wird in unserem Fall die Datei unter /root zu finden sein.***
-Die aktuelle Lüfterumdrehung
+***! Da diese Datei immer im UserVerzeichnis des User der das Apollo Binary gestartet hat angelegt wird, wird in unserem Fall die Datei unter /root zu finden sein. GGF. Mußt Du das den Pfad anpassen.*** z.B. `/bin/cat /USERB/apollo-miner.*`
+
+#### Die aktuelle Lüfterumdrehung
 ```yaml
 - platform: command_line
   command: ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB "/bin/cat apollo-miner.*  | jq -cr '.[\"fans\"][\"0\"][\"rpm\"]' | jq -r '.[]' "
@@ -120,7 +122,7 @@ Die aktuelle Lüfterumdrehung
   scan_interval: 60
 ```
 
-***Aktuelle Durchschnittstemperatur***
+#### Aktuelle Durchschnittstemperatur
 ```yaml
 - platform: command_line
   command: ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB "/bin/cat apollo-miner.*  | jq -cr '.[\"temperature\"][\"avr\"]'' "
