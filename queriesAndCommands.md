@@ -103,6 +103,23 @@ Bitte beachte den Parameter **-f** beim **cut** Befehl. dieser zählt den Abstan
     scan_interval: 60
 ```
 
+### Apollo Infos Abfragen über die Datei apollo-miner.* (json datei)
+Die Datei wird immer nach dem Start neu angelegt mit einer anderen Nummer ( z.B. apollo-miner.3232323243243434)
+Dort werden regelmäßig alle Infos zum Apollo Miner abgelegt während des minings.
+Da es sich um eine json datei handelt, kann die sehr schnell abgefragt werden.
+
+***! Da diese Datei immer im USerVerzeichnis angelegt wird, wird in unserem Fall die Datei unter /root zu finden sein.***
+Die aktuelle Lüfterumdrehung
+```
+- platform: command_line
+  command: ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB "/bin/cat apollo-miner.*  | jq -cr '.[\"fans\"][\"0\"][\"rpm\"]' | jq -r '.[]' "
+  name: apollo_fans
+  unique_id: apolloFansId
+  unit_of_measurement: rpm
+  value_template: "{{ value }}"
+  scan_interval: 60
+```
+
 
 ---
 
