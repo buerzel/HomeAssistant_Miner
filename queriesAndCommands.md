@@ -110,7 +110,7 @@ Da es sich um eine json datei handelt, kann die sehr schnell abgefragt werden.
 
 ***! Da diese Datei immer im USerVerzeichnis angelegt wird, wird in unserem Fall die Datei unter /root zu finden sein.***
 Die aktuelle Lüfterumdrehung
-```
+```yaml
 - platform: command_line
   command: ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB "/bin/cat apollo-miner.*  | jq -cr '.[\"fans\"][\"0\"][\"rpm\"]' | jq -r '.[]' "
   name: apollo_fans
