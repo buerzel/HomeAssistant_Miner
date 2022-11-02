@@ -130,6 +130,32 @@ Im oberen  Teil dieser Maske werden wir nun folgende Wete ausfüllen:
 | Image: | homeassistant/home-assistant:latest | damit wird das Image in der aktuellen Version heruntergeladen |
 | Manual network port publishing | host: 8123 -> container: 8123 | Zuerst auf den Button ***+ publish a new network port*** klicken und dann mit den  Werten ausfüllen|
 
-Im unteren Teil der Maske (Advanced container settings) müssen jetzt noch das in Schritt 2 angelegte Volume zuordnen.
+Im unteren Teil der Maske (Advanced container settings) müssen jetzt noch das in [Schritt 2](https://github.com/buerzel/HomeAssistant_Miner/blob/main/ha_docker_auf_raspiblitz.md#schritt-2-docker-l%C3%A4uft---und-nun) angelegte Volume **homeassistant_data** zuordnen.
 
+Die Einträge sollten wie folgt aussehen. Um einen Eintrag anlegen zu können müsst ihr vorher jeweils auf den Button ***+ map additional volume*** klicken.
+<img src="Images/schritt3_5.png" width="90%">
 
+Wenn diese Einstellungen getätigt worden sind könnt ihr etwa mittig in diesem Formular auf den Button ***Deploy the Container** klicken.
+
+#### Deploy und Start
+
+Nun wird das Image heruntergeladen und der Container mit euren Einstellungen erstellt. Dies kann einige Minuten dauern.
+
+Wenn der Vorgang abgeschlossen ist sollte nach einem Klick auf den Menüpunkt ***Containers** (links im Menü) folgendes Bild erscheinen:
+<img src="Images/schritt3_6.png" width="90%">
+
+Wundert euch nicht wegen der IP Adressen, die werden zur internen Verarbeitung von Docker vergeben.
+
+Eure Homeassistant Umgebung könnte Ihr nun wie folgt aufrufen:
+
+Beispiel: IP Raspiblitz = 192.168.0.21 - Dann im Browser folgendes aufrufen:
+```
+http://192.168.0.21:8123
+```
+
+## WICHTIG
+
+***ToDo....
+Anleitung Backup/Restore Container und Docker  bei raspiblitz Update!***
+
+Wenn es ein Update für den Raspiblitz gibt wird die SD Karte komplett neu geflasht und die Container werden weg sein. Daher macht euch von HA auf jedenfall ein Backup.
