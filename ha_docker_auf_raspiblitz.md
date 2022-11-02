@@ -55,5 +55,21 @@ Docker kann mittles der folegnden Befehle gestoppt und gestartet werden.
 | --- | --- |
 |`systemctl start docker.service`| Docker starten |
 |`systemctl stop docker.service` | Docker stoppen |
-|`systemctl start docker.service` | Docker prüfen (Verklassen mit `str+c`) |
+|`systemctl start docker.service` | Docker prüfen (verlassen mit `str+c`) |
 
+
+## Schritt 2. Docker läuft - und nun?
+
+Um die Konfiguration von Docker zu vereinfachen gibt es grafisches Userinterface was wir als erstes Docker Anwendung installieren.
+Dieser Container heißt **portainer** und wird wie folgt installiert:
+
+**Schritt 1:**
+Zuerst wird ein sogenantes Volume angelegt in dem der Docker Container seine Daten speichern kann. Für portainer müssen wir daher folgendes im Terminal eintragen:
+```
+docker volume create portainer_data
+```
+Nachdem dieses Volume angelegt wurde installieren wir mit folgendem Aufruf portainer.
+
+```
+docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+```
