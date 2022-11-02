@@ -49,9 +49,11 @@ Dazu `systemctl status docker.service` aufrufen und es müsste ein active oder r
 Diesen Bildschirm kannst Du mit der Tastenkombination `strg+c` wieder verlassen um zur Konsole zurück zu kehren.
 
 #### Stop und Start
-Docker kann mittles der Befehle gestoppt und gestartet werden.
+Docker kann mittles der folegnden Befehle gestoppt und gestartet werden.
 
-`systemctl start docker.service` - Docker starten
-`systemctl stop docker.service`  - Docker stoppen
-`systemctl start docker.service` - Docker prüfen (Verklassen mit `str+c`)
+| Befehl | Aktion |
+| --- | --- |
+|`systemctl start docker.service`| Docker starten |
+|`systemctl stop docker.service` | Docker stoppen |
+|`systemctl start docker.service` | Docker prüfen (Verklassen mit `str+c`) |
 
