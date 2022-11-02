@@ -63,9 +63,12 @@ Docker kann mittles der folegnden Befehle gestoppt und gestartet werden.
 Um die Konfiguration von Docker zu vereinfachen gibt es grafisches Userinterface was wir als erstes Docker Anwendung installieren.
 Dieser Container heißt **portainer** und wird wie folgt installiert:
 
-Zuerst wird ein sogenantes Volume angelegt in dem der Docker Container seine Daten speichern kann. Für portainer müssen wir daher folgendes im Terminal eintragen:
-```sh
+Zuerst wird ein sogenantes Volume angelegt in dem der Docker Container seine Daten speichern kann. Für portainer müssen wir daher folgendes im Terminal eintragen. An dieser Stelle erstellen wir auch direkt für unser Homeassistant ein Volume was wir später benötigen werden.
+
+```
 docker volume create portainer_data
+
+docker volume create homeassistant_data
 ```
 Nachdem dieses Volume angelegt wurde installieren wir mit folgendem Aufruf portainer.
 
@@ -95,9 +98,38 @@ Nachdem Du dies getan hast befindest Du Dich auf der Weboberfläche von portaine
 
 <img src="Images/schritt3_1.png" width="80%">
 
-So in etwa sollte die portainer Oberfläche bei im Browser angezeigt werden. Ist dies der Fall könnt ihr auf das **Environment** local in der Mitte des Bildes klicken.
+So in etwa sollte die **portainer** Oberfläche bei euch im Browser angezeigt werden. Ist dies der Fall könnt ihr auf das Environment **local** in der Mitte des Bildes klicken.
 
 Danach seit Ihr in dieser Umgebung und bekommt etwa dieses Bild.
 
 <img src="Images/schritt3_2.png" width="80%">
+
+Wundert euch nicht wenn in diesem Bild bereits drei Images angezeigt werden und bei euch nur eins. Ich habe hier schon etwas mehr installiert. :-)
+
+### HA Container
+
+Um nun Homeassistant als Container zu installieren gehen wir wie folgt vor:
+
+Im linken Menü wählst Du den Punkt **Containers**.
+
+<img src="Images/schritt3_3.png" >
+
+Auf der nun aufgerufen Seite findest Du eine Auflistung der bereits installierten Container - bei Dir sollte hier nur der portainerals running stehen.
+
+Wenn Du nun oben rechts auf den Button **Add Container** klickst erhältst Du eine neue Eingabemaske die etwa so aussieht:
+
+<img src="Images/schritt3_4.png" width="90%">
+
+#### Maske ausfüllen und Werte eintragen
+
+Im oberen  Teil dieser Maske werden wir nun folgende Wete ausfüllen:
+
+| Feldname | Wert der eingetragen wird | Bedeutung |
+| --- | --- | --- |
+| Name: | Homeassistant | Name des Containers |
+| Image: | homeassistant/home-assistant:latest | damit wird das Image in der aktuellen Version heruntergeladen |
+| Manual network port publishing | host: 8123 -> container: 8123 | Zuerst auf den Button ***+ publish a new network port*** klicken und dann mit den  Werten ausfüllen|
+
+Im unteren Teil der Maske (Advanced container settings) müssen jetzt noch das in Schritt 2 angelegte Volume zuordnen.
+
 
