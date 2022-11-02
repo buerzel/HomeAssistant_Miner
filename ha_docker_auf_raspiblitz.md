@@ -15,7 +15,7 @@ apt-get update
 apt-get upgrade
 ```
 
-Dazu verbindet Ihr euch via SSH auf den Raspiblitz und werdet Root.
+Dazu verbindet Ihr euch via SSH auf den Raspiblitz und werdet root.
 Wenn Ihr euch als **admin** via SSH am Raspiblitz anmeldet, kommt ihr direkt auf den Auswahldialog (siehe Abbildung) den Ihr über EXIT schließt.
 
 <img src="Images/schritt1_1.png" width="30%">
@@ -37,4 +37,21 @@ Nun ist eine Anmeldung mit **root** via SSH möglich.
 
 ### Installation
 
-Nachdem Du als root auf dem system arbeiten kannst und das 
+Nachdem Du als root auf dem System arbeiten kannst und das System auf dem neues Stand hast kannst du Docker installieren.
+
+Dazu folgendes im Terminal als root aufrufen:
+```
+apt install docker-compose
+```
+
+Wenn dieser Vorgang abgeschlossen ist könnt Ihr prüfen ob docker auch schon gestartet wurde.
+Dazu `systemctl status docker.service` aufrufen und es müsste ein active oder running zu sehen sein.
+Diesen Bildschirm kannst Du mit der Tastenkombination `strg+c` wieder verlassen um zur Konsole zurück zu kehren.
+
+#### Stop und Start
+Docker kann mittles der Befehle gestoppt und gestartet werden.
+
+`systemctl start docker.service` - Docker starten
+`systemctl stop docker.service`  - Docker stoppen
+`systemctl start docker.service` - Docker prüfen (Verklassen mit `str+c`)
+
