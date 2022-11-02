@@ -114,7 +114,7 @@ Im linken Menü wählst Du den Punkt **Containers**.
 
 <img src="Images/schritt3_3.png" >
 
-Auf der nun aufgerufen Seite findest Du eine Auflistung der bereits installierten Container - bei Dir sollte hier nur der portainerals running stehen.
+Auf der nun aufgerufen Seite findest Du eine Auflistung der bereits installierten Container - bei Dir sollte hier nur der portainer als running stehen.
 
 Wenn Du nun oben rechts auf den Button **Add Container** klickst erhältst Du eine neue Eingabemaske die etwa so aussieht:
 
