@@ -60,7 +60,7 @@ Docker kann mittles der folegnden Befehle gestoppt und gestartet werden.
 
 ## Schritt 2. Docker läuft - und nun?
 
-Um die Konfiguration von Docker zu vereinfachen gibt es ein grafisches Userinterface was wir als erstes Docker Anwendung installieren.
+Um die Konfiguration von Docker zu vereinfachen gibt es ein grafisches Userinterface was wir als erste Docker Anwendung installieren.
 Dieser Container heißt **portainer** und wird wie folgt installiert:
 
 Zuerst wird ein sogenantes Volume angelegt in dem der Docker Container seine Daten speichern kann. Für portainer müssen wir daher folgendes im Terminal eintragen. An dieser Stelle erstellen wir auch direkt für unser Homeassistant ein Volume was wir später benötigen werden.
