@@ -63,13 +63,32 @@ Docker kann mittles der folegnden Befehle gestoppt und gestartet werden.
 Um die Konfiguration von Docker zu vereinfachen gibt es grafisches Userinterface was wir als erstes Docker Anwendung installieren.
 Dieser Container heißt **portainer** und wird wie folgt installiert:
 
-**Schritt 1:**
 Zuerst wird ein sogenantes Volume angelegt in dem der Docker Container seine Daten speichern kann. Für portainer müssen wir daher folgendes im Terminal eintragen:
-```
+```sh
 docker volume create portainer_data
 ```
 Nachdem dieses Volume angelegt wurde installieren wir mit folgendem Aufruf portainer.
 
-```
+```sh
 docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
 ```
+
+Nun haben wir einen ersten Container mit der Anwendung portainer erstellt. Diese hilft uns nun bei den weiteren Schritten.
+
+## Portainer (GUI)
+
+### URL aufrufen
+Wir können nun die Kosnole verlassen und an einen anderen PC der im selben Netz ist arbeiten. Wenn wir jetzt in einem Browser die IP unserers Raspiblitz gefolgt von einem Doppelpunkt und der Zahl 9000 eingeben. Kommen wir auf die Weboberfläche des portainers.
+
+Beispiel: IP Raspiblitz = 192.168.0.21 - Dann im Browser folgendes aufrufen:
+```
+http://192.168.0.21:9000
+```
+
+### Erste Anmeldung
+
+Wenn Du portainer zum ersten Mal aufrufst wirst Du geben ein Passwort einzugeben um den Zugang zu dieser Anwendung zu sichern.
+
+Nachdem Du dies getan hast befindest Du Dich auf der Weboberfläche von portainer und wir können nun darüber jegliche Docker Container installieren.
+
+## Schritt 3. HomeAssistant installieren
