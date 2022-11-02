@@ -36,6 +36,7 @@ Diese werden dann aber nach und nach zusammen geführt.
 - [SSH in HA einrichten](https://github.com/buerzel/HomeAssistant_Miner/blob/main/sshHomeAssistant.md)
 - [Apollo / Cgminer Software via Script steuern](https://github.com/buerzel/HomeAssistant_Miner/blob/main/scriptApolloCgminer.md)
 - [Sammlung von Abfragen für Sensoren und Kommandos](https://github.com/buerzel/HomeAssistant_Miner/blob/main/queriesAndCommands.md)
+- [HA in DockerContainer installieren auf RaspiBlitz Node](https://github.com/buerzel/HomeAssistant_Miner/blob/main/ha_docker_auf_raspiblitz.md)
 
 
 ---
