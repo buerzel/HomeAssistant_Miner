@@ -58,7 +58,7 @@ Ist aber keine Bedingung.
 
 **Telegram Gruppen:**
 - [HomeAssistant für miner](https://t.me/HomeAssistant_BtcMiner)
-- [BTC Solo Mining](https://github.com/max21h/BTC-Info-LEDMatrix)
+- [BTC Solo Mining](https://t.me/BTC_solo_mining)
 
 
 ---
