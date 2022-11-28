@@ -18,6 +18,13 @@ z.B.:
 - ...
 - etc.
 
+# Warum HomeAssistant?
+Es gibt sehr viele unterschiedliche Ansätze bei der "Home Automation". Für mich war es besonders wichtig auf ein Open Source Projekt zu setzen und keine Abhängigkeit von Anmbietern mit Cloudzugang zu haben. 
+
+Dieser Punkt kann garnicht groß genug hervorgehoben werden. Gerade kommerzielle Lösungen haben, für mich, den Nachteil das Sie an die Cloud des Herstellers für Fernzugriffe angebunden werden.
+
+Bei HA kann ich alles lokal in meinem Netz betreiben und ggf. via VPN oder Tor von Aßen zugreifen. Aber alle Daten bleiben bei mir und werden nirgendwo ausgewertet oder protokolliert.
+
 ---
 
 Aktuell sammel ich für jeden Teilbereich eine *.md Datei (Markdown) in der einzelne Arbeitsschritte erklärt werden.
