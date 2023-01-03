@@ -43,6 +43,15 @@ sensor:
 ```
 ***Anmerkung:*** jeden weiteren Sensor könnt ihr direkt unter dem Punkt **sensor** einfügen. Wie im Beispiel!
 
+### Abfrage zu welcher Uhrzeit(Unix Timestamp -> Uhrzeit) der letzte share beim ckpool eingereicht wurde.
+```yaml
+- platform: command_line
+  command: 'curl -s https://solo.ckpool.org/users/<BTCADRESSE_BEI_CKSOLO> | jq -r ''.["lastshare"]'''
+  name: CK Solo Lastshare
+  unique_id: cksoloLastShareId
+  value_template: "{{ value | int | timestamp_custom('%d.%m.%Y %H:%M:%S')}}"
+  scan_interval: 60
+```
 
 ### Abfrage an die CKpool Übersichtsseite für die bestshare eines bestimmten Worker und die gesamte Hashrate der letzten Minute für alle Worker
 ```yaml
