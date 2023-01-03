@@ -179,3 +179,5 @@ Im folgenden Beispiel wollen wir den aktuellen Reward des User OangePill21 als S
   value_template: "{{ value }}"
   scan_interval: 120
 ```
+
+Um es an eure Wünsche anzupassen müssen User (hier OrangePill21) und ggf. reward ersetzt werden.
