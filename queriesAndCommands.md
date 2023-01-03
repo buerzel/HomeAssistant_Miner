@@ -158,3 +158,24 @@ shell_command:
   kommando1: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh Miner01"
   kommando2: "ssh -i /config/ssh -o 'StrictHostKeyChecking=no' UserB@SystemB bash /home/miner.sh stop"
 ```
+
+--- 
+
+# Sonstiges
+Ein Beispiel für eine Besondere Abfrage  auf die MiningGruppen Seite http://solomining.info:8080/reward.
+Es soll der einen bestimmten user der Reward ausgelesen werden.
+Da es sich um eine JSON Ausgabe handelt kann dies mit jq Befehl für einen Sensor funktionieren.
+
+Da die Ausgabe auf dieser Seite Backslashes ```\``` enthält müssen diese durch den Paramter **-j** bereinigt werden.
+
+Im folgenden Beispiel wollen wir den aktuellen Reward des User OangePill21 als Sensorwert in HA ausgeben.
+
+```yaml
+- platform: command_line
+  command: 'curl -s http://solomining.info:8080/reward | jq -j | jq -r ''.[] | select(.workername | contains("OrangePill21")) | .["reward"]'''
+  name: Reward Pille
+  unique_id: rewardPilleId
+  unit_of_measurement: BTC
+  value_template: "{{ value }}"
+  scan_interval: 120
+```
