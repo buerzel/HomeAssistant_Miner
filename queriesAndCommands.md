@@ -162,11 +162,11 @@ shell_command:
 --- 
 
 # Sonstiges
-Ein Beispiel für eine Besondere Abfrage  auf die MiningGruppen Seite http://solomining.info:8080/reward.
-Es soll der einen bestimmten user der Reward ausgelesen werden.
-Da es sich um eine JSON Ausgabe handelt kann dies mit jq Befehl für einen Sensor funktionieren.
+Ein Beispiel für eine spezielle Abfrage auf die Webseite der MiningGruppe: http://solomining.info:8080/reward.
+Es soll das Feld Reward für einen bestimmten user ausgelesen werden.
+Da es sich um eine JSON Ausgabe handelt kann dies mit dem jq Befehl für einen Sensor funktionieren.
 
-Da die Ausgabe auf dieser Seite Backslashes ```\``` enthält müssen diese durch den Paramter **-j** bereinigt werden.
+Da die Ausgabe auf dieser Seite Backslashes ```\``` enthält müssen diese durch den Paramter **-j** zuerst bereinigt werden.
 
 Im folgenden Beispiel wollen wir den aktuellen Reward des User OangePill21 als Sensorwert in HA ausgeben.
 
